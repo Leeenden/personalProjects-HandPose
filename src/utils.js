@@ -8,18 +8,12 @@ const fingerJoints = {
     pinky:[0, 17, 18, 19, 20],
 };
 
-
-
-
-
 // drawing funciton 
 export const drawHand = (predictions, ctx) => {
     //check if we have predictions
     if(predictions.length>0){
         //loop through each prediction
         predictions.forEach((predictions)=>{
-
-
 
             //grab landmarks
             const landmarks = predictions.landmarks;
@@ -47,9 +41,6 @@ export const drawHand = (predictions, ctx) => {
                     ctx.stroke();
                 }
             }
-
-
-
 
             //loop through the landmarkjs and draw
             for (let i =0; i<landmarks.length; i++){
